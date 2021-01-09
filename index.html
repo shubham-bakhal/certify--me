@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-certify</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./certify-me.png" alt="certify-me">
+        <h4>Get certified yourself</h4>
+        <h1><a href="https://github.com/smbakhal" target="_blank" rel="noopener noreferrer">My GitHub</a></h1>
+    </header>
+
+    <main>
+        <label for="img">Select image: </label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <label for="name">Enter Full Name</label>
+        <input minlength="3" maxlength="16" required type="text" placeholder="Full Name" name="Name" id='name' autocomplete="name">
+        <button id="submit">Download Certificate</button>
+    </main>
+    
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
